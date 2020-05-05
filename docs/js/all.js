@@ -1,16 +1,11 @@
 (function ($) {
-    $('#citiesTable').DataTable( {
+    $('#treesTable').DataTable( {
         "ajax": "http://localhost:9080/api/v1/cities",
         "columns": [
-            { "data": "id" },
-            { "data": "fldName" },
-            { "data": "fldLat" },
-            { "data": "fldLong" },
-            { "data": "fldCountry" },
-            { "data": "fldAbbreviation" },
-            { "data": "fldCapitalStatus" },
-            { "data": "fldPopulation" }
-
+            { "data": "Index" },
+            { "data": "Girth_in" },
+            { "data": "Height_ft" },
+            { "data": "Volume_ft_3" }
         ]
     } );
 
